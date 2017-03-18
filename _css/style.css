@@ -1,0 +1,114 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px; }
+
+h1 {
+  width: 100%;
+  text-align: center; }
+
+p {
+  width: 90%;
+  display: block;
+  margin: 1rem auto; }
+
+form {
+  width: 100%;
+  display: block;
+  position: relative; }
+  form input, form select, form #checkbox-label {
+    width: 80%;
+    margin: .5rem auto;
+    border: none;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #ddd;
+    position: relative;
+    border-radius: .3rem;
+    box-sizing: border-box; }
+    form input:hover, form select:hover, form #checkbox-label:hover {
+      background-color: #bbb; }
+  form select:focus ~ #daytips {
+    display: block; }
+  form #multiplier:focus ~ #tips {
+    display: block; }
+  form #multiplier:focus ~ .tooltips:first-of-type {
+    display: block; }
+  form #checkbox-label {
+    margin-top: 1rem;
+    margin-left: 10%;
+    width: 39%;
+    float: left;
+    border: .1rem solid #eee; }
+  form input[type='submit'] {
+    margin-top: 1rem;
+    margin-right: 10%;
+    width: 39%;
+    float: right;
+    border: .1rem solid #eee;
+    background: linear-gradient(to bottom, #beb, #afa, #4a4); }
+    form input[type='submit']:hover {
+      background: linear-gradient(to bottom, #ada, #9e9, #393); }
+  form #checkbox-label div {
+    position: absolute;
+    display: none;
+    right: .5rem;
+    top: 0; }
+  form #odd:checked ~ #checkbox-label {
+    background-color: #dfd; }
+    form #odd:checked ~ #checkbox-label div {
+      display: block; }
+  form label {
+    width: 100%;
+    text-align: center;
+    display: block; }
+  form input[type='checkbox'] {
+    display: none; }
+
+table {
+  width: 100%; }
+  table td, table th {
+    width: 50%;
+    margin: .2rem auto;
+    text-align: center;
+    border: .1rem solid #444; }
+  table #total {
+    background-color: #dfd; }
+  table #total, table #total-title {
+    border-top: .3rem solid #000; }
+
+.tooltips {
+  background-color: #fff;
+  border: .1rem solid #444;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 400px;
+  position: relative; }
+  .tooltips::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+    left: 3rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    z-index: -1;
+    transform: rotate(45deg); }
+
+#daytips, #tips {
+  position: absolute;
+  left: 0rem;
+  display: none; }
+
+#daytips {
+  top: -2rem; }
+
+#tips {
+  top: 2rem; }
+
+/*# sourceMappingURL=style.css.map */
