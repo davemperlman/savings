@@ -46,12 +46,12 @@ isset($_GET['multiplier']) ? $money = $money * $_GET['multiplier'] : $money = $m
 				<?php endforeach ?>
 			</select>
 				<div id="daytips" class="tooltips">
-					<p>here is content</p>
+					<p>Select the day of the week you're likely to set the money aside - pay day, day you happen to run to the bank, etc. The day you choose will determine how many weeks you'll be setting aside money for.</p>
 				</div>
 			<label for="multiplier">Contribution Multiplier</label>
 			<input min="1" id="multiplier" name="multiplier" type="number" value='<?php echo $_GET['multiplier']  ?>'>
 				<div id="tips" class="tooltips">
-					<p>here is multiplier content</p>
+					<p>In this field, you can choose to change the amount of money contributed in multiples if you wish to contribute more.</p>
 				</div>
 			<input type="checkbox" id="odd" name="odd" <?php echo $_GET['odd'] == on ? "checked='checked'" : ''; ?>>
 			<label for="odd" id="checkbox-label">
